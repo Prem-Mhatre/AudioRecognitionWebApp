@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Sound Recognition</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <center>
+        <div class="header col-xs-12">
+            <h2>Sound Controlled Animal</h2>
+            <p>Note: Play Different Sounds Like Barking And Meowing</p>
+        </div>
+        <div class="main">
+            <br><br>
+            <button class="btn btn-info" onclick="startClassifier()">Start</button>
+            <br>
+            <br>
+            <h3 id="result_confidence"></h3>
+            <h2 id="result_label">I Can Hear</h2>
+            <br>
+            <img src="ear.png" width="300" height="300">
+            <br><br>
+        </div>
+        <div class="cc_footer">
+            Developed By - WhiteHatJr
+        </div>
+    </center>
+    <script src="script.js"></script>
+</body>
+</html>
